@@ -182,11 +182,11 @@ const GeminiAI: React.FC = () => {
                   </div>
                   <div
                     className={`chat-bubble max-w-full ${message.type === "ai"
-                      ? "bg-blue-500 text-black"
+                      ? "bg-[#7480ff] text-black"
                       : "bg-gray-950 text-white"
                       }`}
                   >
-                    <p className="text-sm"><MarkdownRenderer content={message.text} /></p>
+                    <p className="text-sm sm:text-base font-medium"><MarkdownRenderer content={message.text} /></p>
                   </div>
                 </div>
               ))}
