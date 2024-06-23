@@ -135,7 +135,7 @@ const GeminiAI: React.FC = () => {
         {messages.length === 0 ? (
           <>
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-gray-300 text-2xl tracking-wide font-bold mb-2">
+              <h1 className="text-gray-300 text-2xl text-center tracking-wide font-bold mb-2">
                 Start chatting with your favorite
               </h1>
               <h1 className="text-gray-300 text-2xl tracking-wide font-bold">
