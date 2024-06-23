@@ -9,6 +9,7 @@ import {
 } from "@google/generative-ai";
 import MarkdownRenderer from "@/components/markdown-renderer";
 import Image from "next/image";
+import { LuLoader } from "react-icons/lu";
 
 interface Message {
   text: string;
@@ -214,7 +215,9 @@ const GeminiAI: React.FC = () => {
             disabled={loading}
             className="bg-blue-500 text-white px-4 py-2 rounded-md ml-4 disabled:bg-gray-500"
           >
-            Send
+            {
+              loading ? <LuLoader className="animate-spin" size={24} /> : "Send"
+            }
           </button>
         </div>
       </div>
