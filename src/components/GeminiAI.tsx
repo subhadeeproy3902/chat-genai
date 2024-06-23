@@ -128,18 +128,18 @@ const GeminiAI: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-between h-screen sm:p-3 lg:px-52 overflow-y-hidden pissoff">
+    <div className="flex flex-col min-h-svh items-center justify-between h-screen sm:p-3 lg:px-52 overflow-y-hidden pissoff">
       <div className="h-full w-full flex flex-col items-center justify-center bg-slate-900 bg-opacity-90 backdrop-blur-md sm:rounded-lg overflow-y-scroll" style={{
         scrollbarWidth: 'none',
       }}>
         {messages.length === 0 ? (
           <>
             <div className="flex flex-col justify-center items-center">
-              <h1 className="text-gray-300 text-2xl text-center tracking-wide font-bold mb-2">
+              <h1 className="text-gray-300 text-xl sm:text-2xl text-center tracking-wide font-bold mb-2">
                 Start chatting with your favorite
               </h1>
-              <h1 className="text-gray-300 text-2xl tracking-wide font-bold">
-                <span className="text-transparent bg-gradient-to-br from-sky-400 via-blue-400 to-indigo-600 bg-clip-text text-5xl">Gemini</span>.AI here !!
+              <h1 className="text-gray-300 text-xl sm:text-2xl tracking-wide font-bold">
+                <span className="text-transparent bg-gradient-to-br from-sky-400 via-blue-400 to-indigo-600 bg-clip-text text-4xl sm:text-5xl">Gemini</span>.AI here !!
               </h1>
 
               <Image
@@ -182,11 +182,11 @@ const GeminiAI: React.FC = () => {
                   </div>
                   <div
                     className={`chat-bubble max-w-full ${message.type === "ai"
-                      ? "bg-[#7480ff] text-black"
+                      ? "bg-[#748bff] text-black"
                       : "bg-gray-950 text-white"
                       }`}
                   >
-                    <p><MarkdownRenderer content={message.text} /></p>
+                    <p className="text-sm"><MarkdownRenderer content={message.text} /></p>
                   </div>
                 </div>
               ))}
