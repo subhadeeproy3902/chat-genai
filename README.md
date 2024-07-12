@@ -1,73 +1,58 @@
-# PocketGPT
+![Gemini](https://i.postimg.cc/NffF6Sm0/Gemini-scaled.webp)
 
-PocketGPT is your one-stop solution for all types of AI models. Whether you are looking for language models, vision models, or any other AI-powered tools, PocketGPT has got you covered.
+# Chat Genai
 
-## Features
+Introducing modern chatbot technology with Gemini AI. Along with Syntax Highlighting when you are generating a code.
 
-- **Diverse AI Models**: Access to a wide range of AI models including GPT, BERT, DALL-E, and many more.
-- **Easy Integration**: Simple API to integrate PocketGPT into your projects.
-- **Scalable**: Designed to scale with your needs, from individual developers to large enterprises.
-- **Community Driven**: Open-source project with contributions from developers all around the world.
+## Installation
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 14.x or later
-- npm or yarn
-
-### Installation
+To get started with Chat Genai, follow these simple steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/Subhadeep3902/pocketgpt.git
-    cd pocketgpt
+    git clone https://github.com/subhadeeproy3902/chat-genai.git
     ```
 
-2. Install the dependencies:
+2. Navigate to the project directory:
+    ```sh
+    cd chat-genai
+    ```
+
+3. Install the required dependencies:
     ```sh
     npm install
-    # or
-    yarn install
     ```
 
-3. Run the development server:
+4. Make a `.env.local` file in the main directory paste the following there
     ```sh
-    npm run dev
-    # or
-    yarn dev
+    NEXT_PUBLIC_GEMINI_API_KEY=your-gemini-api-key
     ```
+    You will be getting the Gemini API from [Google Store](https://aistudio.google.com/app/apikey)
 
-4. Open your browser and navigate to `http://localhost:3000` to see the application running.
-
-### Usage
-
-#### Adding a New AI Model
-
-To add a new AI model, follow these steps:
-
-1. Create a new folder in the `app` directory named `<ai-model-name>` inside it create a `page.tsx`:
-   Example:
-    ```tsx
-    // src/app/gemini/page.tsx
-
-    export default function page() {
-        return (
-            <div>
-                <h1>Gemini AI chatbot</h1>
-                {/*Implement the chatbot according to the UI there*/}
-            </div>
-        );
-    };
+5. Start the application:
+    ```sh
+    npm start
     ```
+  
 
+## Usage
 
-## Contributing
+1. Open your browser and navigate to `http://localhost:3000`.
 
-We welcome contributions from everyone. Making a successful contribution ?? ... add urself up in the `Contributing.md` file
+2. Start chatting now. What's the wait !!
+
+## License
+
+This project is licensed under the MIT License - see the [MIT LICENSE](https://github.com/subhadeeproy3902/chat-genai/blob/main/LICENSE) file for details.
 
 ## Contact
 
-For any inquiries or issues, please reach out to us at [subha9.5roy350@gmail.com](mailto:subha9.5roy350@gmail.com).
-Whatsapp: +91 86373 73116
+For questions or suggestions, feel free to reach out:
 
+- Email: [subha9.5roy350@gmail.com](mailto:subha9.5roy350@gmail.com)
+
+- LinkedIn: [My LinkedIn Profile](https://linkedin.com/in/subhadeep3902)
+
+---
+
+If you like this project do give a ⭐. 😅😅
