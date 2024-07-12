@@ -16,7 +16,7 @@ interface Message {
   type: "user" | "ai";
 }
 
-const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY as string;
 const MODEL_NAME = "gemini-1.0-pro-001";
 
 const GeminiAI: React.FC = () => {
